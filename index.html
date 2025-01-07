@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini IMDB Clone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mini IMDB Clone</a>
+      <button class="btn btn-outline-primary" onclick="navigateToFavourites()">My Favourites</button>
+    </div>
+  </nav>
+  <div class="container my-4">
+    <h1>Mini IMDB Clone</h1>
+    <input id="search-bar" type="text" class="form-control" placeholder="Search movies..." />
+    <div id="results" class="row mt-4"></div>
+  </div>
+  <script src="app.js"></script>
+  <script>
+    // Navigate to Favourites page
+    function navigateToFavourites() {
+      window.location.href = 'favourites.html';
+    }
+  </script>
+</body>
+</html>
